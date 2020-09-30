@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body{
   background-color:  hsl(210, 46%, 95%);
   font-family: 'Manrope', sans-serif;
@@ -12,33 +17,46 @@ body{
 }
 
 .card{
+  position: relative;
   display: flex;
+  align-items: center;
   background-color: white;
-  width: 80%;
+  width: 65%;
+  height: 50%;
   border-radius: 10px;
 }
 
 .imgContainer{
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .card__img{
-  width: 100%;
+  width: 350px;
   height: 100%;
-  object-fit: cover;
   border-radius: 10px 0 0 10px ;
 }
 
 .card__content{
   display: flex;
+  height: 80%;
   flex-direction: column;
+  justify-content: space-between;
   padding: 2rem;
+}
+
+.card__contentText{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 75%;
 }
 
 .card__profile{
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .card__imgProfile{
@@ -47,12 +65,29 @@ body{
   border-radius: 100%;
 }
 
-.card__mainTitle{
+h2{
+  color: hsl(217, 19%, 35%);
+  font-size: 14px;
+}
+
+.mainTitle{
   font-size: 20px;
+  color: hsl(217, 19%, 35%)
+}
+
+.secondtitle{
+  font-size: 16px;
+  color: hsl(217, 19%, 35%);
+}
+
+.date{
+  color: hsl(212, 23%, 69%);
+  font-size: 12px;
 }
 
 .card__info{
-  width: 60%;
+  width: 80%;
+  height: 60%;
   display: flex;
   align-items: center;
 }
@@ -62,7 +97,24 @@ body{
 }
 
 .share{
-  width: 10%;
-  height: 60%;
+  width: 8%;
+  height: 50%;
 }
 
+.popupLinks{
+  position: absolute;
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(212, 23%, 69%);
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  padding: 1rem;
+  border-radius: 10px;
+  right: -50px;
+  bottom: 80px;
+  opacity: 0;
+}
+
+.appear{
+  opacity: 1;
+}
