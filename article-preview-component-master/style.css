@@ -1,0 +1,68 @@
+body{
+  background-color:  hsl(210, 46%, 95%);
+  font-family: 'Manrope', sans-serif;
+}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  display: flex;
+  background-color: white;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.imgContainer{
+  max-width: 100%;
+}
+
+.card__img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 0 0 10px ;
+}
+
+.card__content{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.card__profile{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__imgProfile{
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+.card__mainTitle{
+  font-size: 20px;
+}
+
+.card__info{
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.card__name{
+  margin-left: 20px;
+}
+
+.share{
+  width: 10%;
+  height: 60%;
+}
+
