@@ -3,86 +3,31 @@
   padding: 0;
 }
 
-body{
+body {
   background-color: hsl(180, 52%, 96%);
 }
 
-.imgBG{
-  width: 100vw;
-  background-color: hsl(180, 34%, 42%);
-}
-
-.container{
-  width: 100vw;
-  height: 100vh;
-}
-
-.container__card{
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-}
-
-.card{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.cards{
+.container {
   position: relative;
-  width: 330px;
-  height: 250px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color:  white;
-  box-shadow: 23px 21px 44px -39px hsl(180, 34%, 42%);
-  font-size: 15px;
-  font-family: "Spartan", sans-serif;
-  margin-top: 200px;
+  align-items: center;
 }
 
-.cardImg{
-  width: 20%;
-  object-fit: cover;
+.cards {
   position: absolute;
-  top: -30px;
-  left: 10px;
+  width: 300px;
+  height: 200px;
+  background-color: white;
+  margin-top: 12rem;
+  box-shadow: 1px 2px 36px -4px rgba(0,0,0,0.75);
 }
 
-.name{
-  display: flex;
-  align-items: center;
-  width: 40%;
-  justify-content: space-between;
+.container_Bg {
+  background-color: hsl(180, 29%, 50%);
 }
 
-.post{
-  display: flex;
-  align-items: center;
-  width: 65%;
-  justify-content: space-between;
-  color: hsl(180, 8%, 52%);
-}
-
-.filters{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 55%;
-  height: 20%;
-  font-weight: 500;
-  color: hsl(180, 34%, 42%);
-}
-
-.companyName{
-  font-weight: 500;
-  color: hsl(180, 34%, 42%);
-}
-
-.companyPosition{
-  font-weight: 700;
+.container_BgImg{
+  object-fit: cover;
 }
