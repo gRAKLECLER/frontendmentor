@@ -7,16 +7,46 @@ body {
   background-color: hsl(180, 52%, 96%);
 }
 
+img {
+  width: 2.5rem;
+}
+
 .container {
   width: 100vw;
 }
 
 .cards {
+  position: relative;
   width: 80%;
-  height: 200px;
+  padding: 1rem;
+  padding-top: 2.5rem;
   background-color: white;
   margin: 2rem;
-  box-shadow: 1px 2px 36px -4px rgba(0,0,0,0.75);
+  box-shadow: 1px 2px 36px -4px rgba(103, 167, 209, 0.75);
+}
+
+.cards__title, .cards__suppInfo {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cards__logo {
+  position: absolute;
+  left: 1rem;
+  top: -1rem;
+}
+
+.cards__tech {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.cards__techs{
+  background-color: hsl(180, 52%, 96%);
+  color: hsl(180, 29%, 50%);
+  padding: 0.3rem;
+  margin: .3rem;
 }
 
 .card {

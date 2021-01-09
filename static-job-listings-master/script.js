@@ -8,9 +8,11 @@ fetch('data.json')
   const $data = data
 
   $data.forEach(element => {
+    // element.languages.forEach(el => {})
     $card.innerHTML += `
       <div class="cards">
         <div class="cards__upInfo">
+        <img class="cards__logo" src="${element.logo}">
           <div class="cards__title">
             <p>${element.company}</p>
             <p>NEW!</p>
@@ -24,11 +26,11 @@ fetch('data.json')
           </div>
         </div>
         <hr/>
-        <div>
-          <p>${element.role}</p>
-          <p>${element.level}</p>
-          <p>${element.languages}</p>
-          <p>${element.tools}</p>
+        <div class="cards__tech">
+          <p class="cards__techs">${element.role}</p>
+          <p class="cards__techs">${element.level}</p>
+          <p class="cards__techs">${element.languages.join(" ")}</p>
+          <p class="cards__techs">${element.tools.join(" ")}</p>
         </div>
       </div>
     `
