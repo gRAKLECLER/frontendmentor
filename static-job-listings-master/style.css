@@ -18,6 +18,7 @@ img {
 .cards {
   position: relative;
   width: 80%;
+  height: 150px;
   padding: 1rem;
   padding-top: 2.5rem;
   background-color: white;
@@ -30,6 +31,19 @@ img {
   justify-content: space-around;
 }
 
+.cards__title > p,
+.cards__suppInfo> p {
+  margin-right: 10px;
+}
+
+.cards__upInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  height: 50%;
+}
+
 .cards__logo {
   position: absolute;
   left: 1rem;
@@ -37,16 +51,17 @@ img {
 }
 
 .cards__tech {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 40px;
 }
 
 .cards__techs{
   background-color: hsl(180, 52%, 96%);
   color: hsl(180, 29%, 50%);
-  padding: 0.3rem;
+  padding: .3rem;
   margin: .3rem;
+  text-align: center;
 }
 
 .card {
