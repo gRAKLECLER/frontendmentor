@@ -1,0 +1,76 @@
+.hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url('./../../images/mobile/image-hero.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  &__header {
+    // position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  &__burger{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    z-index: 9999;
+    width: 70px;
+    height: 5px;
+    background-color: white;
+
+    &:nth-child(2){
+      top: 3rem;
+    }
+    &:nth-child(3){
+      top: 4rem;
+    }
+  }
+
+  &__Title {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__headerTitle {
+    height: auto;
+    width: 66%;
+    text-align: left;
+    font-size: 7rem;
+    font-weight: 100;
+    color: white;
+    border: 2px solid white;
+    padding: 2.5rem;
+  }
+
+  &__headerNav {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: white;
+    position: absolute;
+    background-color: rgb(4, 1, 12);
+    top: -100%;
+    left: 0;
+    transition: transform .3s ease-in-out;
+
+  }
+}
+
+.appear {
+  transform: translateY(100%);
+}
