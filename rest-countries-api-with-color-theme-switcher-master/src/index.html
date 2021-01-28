@@ -4,9 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../src/scss/style.scss">
+  <script src="../src/main.js" defer></script>
   <title>Document</title>
 </head>
 <body>
-  <h1>countrie project</h1>
+  <header class="header">
+    <h1 class="header__title">Where in the world ?</h1>
+    <div class="header__darkMode">
+      <img class="header__logoDarkMode" src="../assets/moon.svg" alt="">
+      <p class="header__textDarkMode">Dark Mode</p>
+    </div>
+  </header>
+  <div>
+    <input type="text" placeholder="search">
+  </div>
+  <section class="cards"></section>
 </body>
 </html>

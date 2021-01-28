@@ -1,0 +1,25 @@
+.header {
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: hsl(200, 15%, 8%);
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0px 7px 15px -6px rgba(0,0,0,0.25);
+
+  &__title {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  &__darkMode {
+    display: flex;
+    width: 35%;
+    align-items: center;
+  }
+
+  &__logoDarkMode {
+    width: 15%;
+    margin-right: 10px;
+  }
+}
