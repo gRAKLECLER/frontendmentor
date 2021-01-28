@@ -66,7 +66,7 @@ h1, h3 {
   padding: 1em;
   background-color: hsl(0, 0%, 98%);
   margin-top: 2em;
-  border-radius: 5%;
+  border-radius: 2%;
   overflow: hidden;
 }
 
@@ -117,7 +117,22 @@ img{
   width: 15%;
 }
 
-@media (min-width: 970px) {
+@media all and (min-width: 320px) {
+  .cardsContent {
+    min-height: unset;
+  }
+
+  .card.first:first-child{
+    margin-top: 10rem;
+  }
+
+  .mainText {
+    height: 100%;
+  }
+}
+
+
+@media all and (min-width: 970px) {
   .container{
     height: auto;
     justify-content: center;
@@ -133,5 +148,8 @@ img{
     align-items: center;
     justify-content: space-evenly;
   }
-}
 
+  .card.first:first-child{
+    margin-top: 2rem;
+  }
+}
