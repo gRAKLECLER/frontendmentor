@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../src/scss/style.scss">
-  <script src="../src/main.js" defer></script>
   <title>Document</title>
 </head>
 <body>
@@ -15,9 +14,15 @@
       <p class="header__textDarkMode">Dark Mode</p>
     </div>
   </header>
-  <div>
+  <div class="selectSection">
     <input type="text" placeholder="search">
+    <select name="" id="">
+      <option value="seach">Filter by Region</option>
+    </select>
   </div>
-  <section class="cards"></section>
+  <section class="cards">
+    <div class="cards__cardId" id="cards__cardId"></div>
+  </section>
 </body>
+  <script src="../src/main.js"></script>
 </html>
