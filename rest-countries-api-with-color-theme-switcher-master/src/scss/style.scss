@@ -23,6 +23,16 @@ a {
   }
 }
 
+.dark {
+  background-color: hsl(207, 26%, 17%);
+  color: hsl(0, 0%, 100%);
+  fill: hsl(0, 0%, 100%);
+
+  div{
+    background-color: hsl(207, 26%, 17%);
+  }
+}
+
 @media screen and (min-width: 600px) {
   .selectSection{
     flex-direction:row;
