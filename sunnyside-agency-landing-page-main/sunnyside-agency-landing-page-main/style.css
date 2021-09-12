@@ -1,5 +1,18 @@
+body {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 48px;
+}
+
 .header {
+  position: relative;
   height: 100vh;
+  background-image: url(../sunnyside-agency-landing-page-main/images/desktop/image-header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .nav {
@@ -17,8 +30,39 @@
 
 .hero__image {
   position: absolute;
-  top: -10px;
+  top: 0;
   z-index: -1;
   object-fit: contain;
   width: 100%;
+}
+
+.hero__title {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.info {
+  display: flex;
+}
+
+.clients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.agency {
+  display: flex;
+}
+
+.images {
+  display: flex;
+}
+
+.img {
+  width: 25%;
 }
